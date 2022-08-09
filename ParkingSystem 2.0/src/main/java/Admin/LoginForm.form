@@ -208,7 +208,7 @@
         <Component class="javax.swing.JButton" name="btnLogIn">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Admin/Login.png"/>
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\Login.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Log In"/>
           </Properties>
@@ -224,7 +224,7 @@
         <Component class="javax.swing.JButton" name="btnQuit">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Admin/Quit.png"/>
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\Quit.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Quit"/>
           </Properties>

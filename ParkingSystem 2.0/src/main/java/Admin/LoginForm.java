@@ -92,7 +92,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        btnLogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/Login.png"))); // NOI18N
+        btnLogIn.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\Login.png")); // NOI18N
         btnLogIn.setText("Log In");
         btnLogIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +102,7 @@ public class LoginForm extends javax.swing.JFrame {
 
         jLabel4.setText("Group 5");
 
-        btnQuit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/Quit.png"))); // NOI18N
+        btnQuit.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\Quit.png")); // NOI18N
         btnQuit.setText("Quit");
         btnQuit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
