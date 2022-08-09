@@ -207,6 +207,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnLogIn">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Admin/Login.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Log In"/>
           </Properties>
           <Events>
@@ -220,6 +223,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnQuit">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Admin/Quit.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Quit"/>
           </Properties>
           <Events>
