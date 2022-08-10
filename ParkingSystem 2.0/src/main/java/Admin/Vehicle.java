@@ -11,13 +11,11 @@ import java.io.Serializable;
  * @author Administrator
  */
 public class Vehicle implements Serializable {
-    public static int count = 0;
     protected String lic_Plate;
     protected Ticket ticket;
 
     public Vehicle(){
-        lic_Plate = StringNumer(2) + StringAlpha(1) + StringNumer(5);
-        count++;
+        lic_Plate = "29" + StringAlpha(1) + StringNumer(5);
     }
     public Vehicle(Vehicle v){
         lic_Plate = v.lic_Plate;

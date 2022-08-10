@@ -641,9 +641,9 @@ public class CarInAndOut extends javax.swing.JFrame {
                 
                 txtOutQueueSize.setText(String.valueOf(outQ.size()));
                 txtCurrentOutQ.setText(outQ.peek().getLicPlate());
-                txtCardIdOut.setText(String.valueOf(out.getTicket().getID()));
-                txtLicensePlateOut.setText(out.getLicPlate());
-                txtPrice.setText(String.valueOf(out.getTicket().getPrice()));
+                txtCardIdOut.setText(String.valueOf(outQ.peek().getTicket().getID()));
+                txtLicensePlateOut.setText(outQ.peek().getLicPlate());
+                txtPrice.setText(String.valueOf(outQ.peek().getTicket().getPrice()));
             } 
         } 
         catch (Exception e) {

@@ -56,7 +56,7 @@ public class Admin extends javax.swing.JFrame {
         btnCarInOut = new javax.swing.JButton();
         btnStatistic = new javax.swing.JButton();
         btnAccounts = new javax.swing.JButton();
-        btnGarage = new javax.swing.JButton();
+        btnParkingVisualization = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -128,13 +128,13 @@ public class Admin extends javax.swing.JFrame {
             }
         });
 
-        btnGarage.setBackground(new java.awt.Color(153, 255, 153));
-        btnGarage.setText("Garage");
-        btnGarage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnGarage.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnGarage.addActionListener(new java.awt.event.ActionListener() {
+        btnParkingVisualization.setBackground(new java.awt.Color(153, 255, 153));
+        btnParkingVisualization.setText("Parking Visualization");
+        btnParkingVisualization.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnParkingVisualization.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnParkingVisualization.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGarageActionPerformed(evt);
+                btnParkingVisualizationActionPerformed(evt);
             }
         });
 
@@ -161,7 +161,7 @@ public class Admin extends javax.swing.JFrame {
                     .addComponent(btnStatistic, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnGarage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnParkingVisualization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE))
                 .addContainerGap(79, Short.MAX_VALUE))
         );
@@ -171,7 +171,7 @@ public class Admin extends javax.swing.JFrame {
                 .addContainerGap(110, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnCarInOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnGarage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnParkingVisualization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSystem, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
                 .addGap(63, 76, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -235,10 +235,10 @@ public class Admin extends javax.swing.JFrame {
               // TODO add your handling code here:
     }//GEN-LAST:event_btnAccountsActionPerformed
 
-    private void btnGarageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGarageActionPerformed
+    private void btnParkingVisualizationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParkingVisualizationActionPerformed
         new Garage().setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGarageActionPerformed
+    }//GEN-LAST:event_btnParkingVisualizationActionPerformed
 
     /**
      * @param args the command line arguments
@@ -282,8 +282,8 @@ public class Admin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAccounts;
     private javax.swing.JButton btnCarInOut;
-    private javax.swing.JButton btnGarage;
     private javax.swing.JButton btnLogOut;
+    private javax.swing.JButton btnParkingVisualization;
     private javax.swing.JButton btnStatistic;
     private javax.swing.JButton btnSystem;
     private javax.swing.Box.Filler filler1;

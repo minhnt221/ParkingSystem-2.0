@@ -137,7 +137,7 @@
                   </Group>
                   <EmptySpace pref="76" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnGarage" max="32767" attributes="0"/>
+                      <Component id="btnParkingVisualization" max="32767" attributes="0"/>
                       <Component id="btnLogOut" pref="178" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="79" max="32767" attributes="0"/>
@@ -150,7 +150,7 @@
                   <EmptySpace pref="110" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnCarInOut" max="32767" attributes="0"/>
-                      <Component id="btnGarage" max="32767" attributes="0"/>
+                      <Component id="btnParkingVisualization" max="32767" attributes="0"/>
                       <Component id="btnSystem" pref="118" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="63" pref="76" max="32767" attributes="0"/>
@@ -217,17 +217,17 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAccountsActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnGarage">
+        <Component class="javax.swing.JButton" name="btnParkingVisualization">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="99" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Garage"/>
+            <Property name="text" type="java.lang.String" value="Parking Visualization"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGarageActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnParkingVisualizationActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnLogOut">
