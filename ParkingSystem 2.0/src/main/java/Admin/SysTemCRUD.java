@@ -4,6 +4,8 @@
  */
 package Admin;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,6 +21,9 @@ public class SysTemCRUD extends javax.swing.JFrame {
      */
     public SysTemCRUD() {
         initComponents();
+        Toolkit toolKit = getToolkit();
+        Dimension size = toolKit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2, size.height/2 - getHeight()/2);
         
     }
 
