@@ -91,7 +91,6 @@ public class Admin extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, null));
 
         btnSystem.setBackground(new java.awt.Color(153, 204, 255));
-        btnSystem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/system.png"))); // NOI18N
         btnSystem.setText("System"); // NOI18N
         btnSystem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSystem.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -102,7 +101,6 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnCarInOut.setBackground(new java.awt.Color(255, 153, 153));
-        btnCarInOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/car.png"))); // NOI18N
         btnCarInOut.setText("Car In And Out");
         btnCarInOut.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCarInOut.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -113,7 +111,6 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnStatistic.setBackground(new java.awt.Color(78, 169, 116));
-        btnStatistic.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/statistic.png"))); // NOI18N
         btnStatistic.setText("Statistic");
         btnStatistic.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +119,6 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnAccounts.setBackground(new java.awt.Color(78, 134, 196));
-        btnAccounts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/account.png"))); // NOI18N
         btnAccounts.setText("Accounts");
         btnAccounts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAccounts.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -133,13 +129,16 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnGarage.setBackground(new java.awt.Color(153, 255, 153));
-        btnGarage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/Parkinggarage.png"))); // NOI18N
         btnGarage.setText("Garage");
         btnGarage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnGarage.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnGarage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGarageActionPerformed(evt);
+            }
+        });
 
         btnLogOut.setBackground(new java.awt.Color(51, 51, 51));
-        btnLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Admin/152533.png"))); // NOI18N
         btnLogOut.setText("Log Out");
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,6 +234,11 @@ public class Admin extends javax.swing.JFrame {
        this.setVisible(false);
               // TODO add your handling code here:
     }//GEN-LAST:event_btnAccountsActionPerformed
+
+    private void btnGarageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGarageActionPerformed
+        new Garage().setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGarageActionPerformed
 
     /**
      * @param args the command line arguments

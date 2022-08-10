@@ -4,6 +4,8 @@
  */
 package Admin;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -35,6 +37,9 @@ public class CarInAndOut extends javax.swing.JFrame {
             initComponents();
         } catch (Exception e) {
         }
+        Toolkit toolKit = getToolkit();
+        Dimension size = toolKit.getScreenSize();
+        setLocation(size.width/2 - getWidth()/2, size.height/2 - getHeight()/2);
     }
 
     /**
