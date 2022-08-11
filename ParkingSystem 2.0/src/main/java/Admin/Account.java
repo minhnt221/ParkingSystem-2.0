@@ -69,6 +69,11 @@ public class Account extends javax.swing.JFrame {
         btnNewAcc.setText("New Account");
         btnNewAcc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnNewAcc.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnNewAcc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNewAccActionPerformed(evt);
+            }
+        });
 
         btnDelAcc.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\NetBeansProjects\\CourseProject\\src\\main\\java\\dellAcc2.png")); // NOI18N
         btnDelAcc.setText("Delete Account");
@@ -152,6 +157,11 @@ public class Account extends javax.swing.JFrame {
         }
         this.setVisible(false);// TODO add your handling code here:
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void btnNewAccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewAccActionPerformed
+       CreateNewAcc().setVisible(true);
+       this.setVisible(false);// TODO add your handling code here:
+    }//GEN-LAST:event_btnNewAccActionPerformed
 
     /**
      * @param args the command line arguments

@@ -174,7 +174,7 @@ public class ParkingSystem {
         int k = 0;
         for (int i = 1; i< p.getMaxRow()+1; i++){
             for (int j = 1; j< p.getMaxColumn()+1; j++){
-                if(p.getSlot(i, j).isAvai()==false){
+                if(!p.getSlot(i, j).isAvai()){
                     a[k] = p.getSlot(i, j).getVehicle().getTicket().getID();
                     k++;
                 }

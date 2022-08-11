@@ -17,6 +17,16 @@ import java.util.logging.Logger;
  * @author dqkhanh
  */
 public class Garage extends javax.swing.JFrame {
+    private Boolean isAdmin = false;
+    //isAdmin getter
+    public Boolean getIsAdmin(){
+        return isAdmin;
+    }
+    //isAdmin setter
+    public void setIsAdmin(Boolean isAdmin){
+        this.isAdmin = isAdmin;
+    }
+
     public static javax.swing.JToggleButton [][]showParking;
 
     /**
@@ -223,8 +233,7 @@ public class Garage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(93, 93, 93)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel3)))
@@ -876,8 +885,8 @@ public class Garage extends javax.swing.JFrame {
                     .addComponent(jToggleButton98, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jToggleButton99, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jToggleButton100, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -885,10 +894,22 @@ public class Garage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        try {
+        if(isAdmin){
+            try {
             new Admin().setVisible(true);
         } catch (IOException ex) {
             Logger.getLogger(Account.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            
+        }
+        else{
+            try {
+            new AdminPhu().setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(Account.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+            
         }
         this.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed

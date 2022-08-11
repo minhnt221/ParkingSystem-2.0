@@ -19,6 +19,7 @@ public class LoginForm extends javax.swing.JFrame {
     /**
      * Creates new form LoginForm
      */
+    TaiKhoan tk = new TaiKhoan();
     public LoginForm() {
         initComponents();
         setLocationRelativeTo(null);
@@ -191,14 +192,30 @@ public class LoginForm extends javax.swing.JFrame {
         String User = txtUsername.getText();
         String Pass = pwPass.getText();
         
-        if(User.equals("admin") && Pass.equals("123")){
-            try {
+        
+        if(tk.login(User, Pass, "src/main/java/Resources/Accounts.txt")){
+            if(tk.getAdmin()){
+                try {
                 JOptionPane.showMessageDialog(this, "Login Successfully");
-                new Admin().setVisible(true);
+                
+                Admin process = new Admin();
+                process.setAdmin(true);
+                process.setVisible(true);
                 this.setVisible(false);
-            } catch (IOException ex) {
-                Logger.getLogger(LoginForm.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(LoginForm.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            } else{
+                try {
+                JOptionPane.showMessageDialog(this, "Login Successfully");
+                new AdminPhu().setVisible(true);
+                this.setVisible(false);
+                } catch (IOException ex) {
+                    Logger.getLogger(LoginForm.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
+            
+            
         }
         else
             JOptionPane.showMessageDialog(this, "Username or Password is not correct");

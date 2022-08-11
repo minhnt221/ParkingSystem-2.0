@@ -22,8 +22,17 @@ public class Admin extends javax.swing.JFrame {
     private static Parking p;
     public static Queue<Vehicle> inQ = new ArrayDeque<>();
     public static Queue<Vehicle> outQ = new ArrayDeque<>();
-    private static Vehicle []car;
-    private static int []getParkingStatus;
+    private static Vehicle[] car;
+    private static int[] getParkingStatus;
+    private Boolean isAdmin;
+    //isAdmin getter
+    public Boolean getAdmin(){
+        return isAdmin;
+    }
+    //isAdmin setter
+    public void setAdmin(Boolean admin){
+        isAdmin = admin;
+    }
 
     /**
      * Creates new form Admin
@@ -237,7 +246,10 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSystemActionPerformed
 
     private void btnCarInOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarInOutActionPerformed
-        new CarInAndOut(p, inQ, outQ).setVisible(true);
+
+        CarInAndOut process = new CarInAndOut(p, inQ, outQ);
+        process.setAdmin(isAdmin);
+        process.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnCarInOutActionPerformed
 
@@ -248,7 +260,11 @@ public class Admin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAccountsActionPerformed
 
     private void btnParkingVisualizationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParkingVisualizationActionPerformed
-        new Garage().setVisible(true);
+        
+        
+        Garage proccess = new Garage();
+        proccess.setIsAdmin(isAdmin);
+        proccess.setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnParkingVisualizationActionPerformed
 

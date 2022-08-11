@@ -17,6 +17,15 @@ import java.util.logging.Logger;
  * @author dqkhanh
  */
 public class CarInAndOut extends javax.swing.JFrame {
+    private Boolean isAdmin = false;
+    //isAdmin getter
+    public Boolean getAdmin() {
+        return isAdmin;
+    }
+    //isAdmin setter
+    public void setAdmin(Boolean admin) {
+        this.isAdmin = admin;
+    }
     
     public static Parking p = null;
     public static Queue<Vehicle> inQ;
@@ -503,7 +512,7 @@ public class CarInAndOut extends javax.swing.JFrame {
                         .addGap(26, 26, 26))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addGap(8, 8, 8)))
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -536,12 +545,24 @@ public class CarInAndOut extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDemoCarInx1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
+        if(isAdmin){
+            try {
             new Admin().setVisible(true);
             this.setVisible(false);// TODO add your handling code here:
         } catch (IOException ex) {
             Logger.getLogger(CarInAndOut.class.getName()).log(Level.SEVERE, null, ex);
         }
+            
+        }
+        else{
+            try {
+            new AdminPhu().setVisible(true);
+            this.setVisible(false);// TODO add your handling code here:
+        } catch (IOException ex) {
+            Logger.getLogger(CarInAndOut.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnGoInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGoInActionPerformed
