@@ -11,6 +11,8 @@ import java.io.Serializable;
  * @author Administrator
  */
 public class Vehicle implements Serializable {
+
+    static int count;
     protected String lic_Plate;
     protected Ticket ticket;
 
