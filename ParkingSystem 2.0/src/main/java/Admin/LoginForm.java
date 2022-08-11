@@ -26,7 +26,6 @@ public class LoginForm extends javax.swing.JFrame {
     }
 
 
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -101,7 +100,7 @@ public class LoginForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("Group 5");
+        jLabel4.setText("Group 4");
 
         btnQuit.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\Quit.png")); // NOI18N
         btnQuit.setText("Quit");
