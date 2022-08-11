@@ -75,7 +75,7 @@ public class Admin extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel1)
-                .addContainerGap(862, Short.MAX_VALUE))
+                .addContainerGap(866, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,6 +91,7 @@ public class Admin extends javax.swing.JFrame {
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.darkGray, null));
 
         btnSystem.setBackground(new java.awt.Color(153, 204, 255));
+        btnSystem.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\system.png")); // NOI18N
         btnSystem.setText("System"); // NOI18N
         btnSystem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSystem.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -101,6 +102,7 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnCarInOut.setBackground(new java.awt.Color(255, 153, 153));
+        btnCarInOut.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\car.png")); // NOI18N
         btnCarInOut.setText("Car In And Out");
         btnCarInOut.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCarInOut.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -111,7 +113,10 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnStatistic.setBackground(new java.awt.Color(78, 169, 116));
+        btnStatistic.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\statistic.png")); // NOI18N
         btnStatistic.setText("Statistic");
+        btnStatistic.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnStatistic.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnStatistic.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnStatisticActionPerformed(evt);
@@ -119,6 +124,7 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnAccounts.setBackground(new java.awt.Color(78, 134, 196));
+        btnAccounts.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\account.png")); // NOI18N
         btnAccounts.setText("Accounts");
         btnAccounts.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAccounts.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -129,6 +135,7 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnParkingVisualization.setBackground(new java.awt.Color(153, 255, 153));
+        btnParkingVisualization.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\Parkinggarage.png")); // NOI18N
         btnParkingVisualization.setText("Parking Visualization");
         btnParkingVisualization.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnParkingVisualization.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -139,7 +146,10 @@ public class Admin extends javax.swing.JFrame {
         });
 
         btnLogOut.setBackground(new java.awt.Color(51, 51, 51));
+        btnLogOut.setIcon(new javax.swing.ImageIcon("C:\\Users\\dqkhanh\\Documents\\GitHub\\ParkingSystem-2.0\\ParkingSystem 2.0\\src\\main\\java\\Admin\\152533.png")); // NOI18N
         btnLogOut.setText("Log Out");
+        btnLogOut.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnLogOut.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogOutActionPerformed(evt);
@@ -155,11 +165,11 @@ public class Admin extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnSystem, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
                     .addComponent(btnAccounts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnCarInOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnStatistic, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnParkingVisualization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE))
@@ -168,18 +178,20 @@ public class Admin extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(110, Short.MAX_VALUE)
+                .addContainerGap(108, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnCarInOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnParkingVisualization, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnSystem, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
-                .addGap(63, 76, Short.MAX_VALUE)
+                .addGap(68, 85, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAccounts, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnStatistic, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnAccounts, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnStatistic, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
                         .addComponent(btnLogOut, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(110, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -189,9 +201,9 @@ public class Admin extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+                .addContainerGap(69, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,9 +211,9 @@ public class Admin extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();

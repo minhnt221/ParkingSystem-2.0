@@ -42,9 +42,9 @@
           <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
           <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace pref="66" max="32767" attributes="0"/>
+              <EmptySpace pref="69" max="32767" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="66" max="32767" attributes="0"/>
+              <EmptySpace pref="69" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -54,9 +54,9 @@
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace pref="38" max="32767" attributes="0"/>
+              <EmptySpace pref="35" max="32767" attributes="0"/>
               <Component id="jPanel3" max="32767" attributes="0"/>
-              <EmptySpace pref="38" max="32767" attributes="0"/>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -75,7 +75,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="862" max="32767" attributes="0"/>
+                  <EmptySpace pref="866" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -130,12 +130,12 @@
                       <Component id="btnSystem" pref="182" max="32767" attributes="0"/>
                       <Component id="btnAccounts" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="66" max="32767" attributes="0"/>
+                  <EmptySpace pref="70" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnCarInOut" max="32767" attributes="0"/>
                       <Component id="btnStatistic" pref="187" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="76" max="32767" attributes="0"/>
+                  <EmptySpace pref="70" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnParkingVisualization" max="32767" attributes="0"/>
                       <Component id="btnLogOut" pref="178" max="32767" attributes="0"/>
@@ -147,21 +147,24 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <EmptySpace pref="108" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="btnCarInOut" max="32767" attributes="0"/>
                       <Component id="btnParkingVisualization" max="32767" attributes="0"/>
                       <Component id="btnSystem" pref="118" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="63" pref="76" max="32767" attributes="0"/>
+                  <EmptySpace min="68" pref="85" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnAccounts" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnStatistic" alignment="3" min="-2" pref="116" max="-2" attributes="0"/>
-                          <Component id="btnLogOut" alignment="3" min="-2" pref="118" max="-2" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                          <Component id="btnAccounts" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
+                          <Component id="btnStatistic" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Component id="btnLogOut" min="-2" pref="118" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <EmptySpace pref="105" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -171,6 +174,9 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="99" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\system.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="System" noResource="true"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -185,6 +191,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="ff" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\car.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Car In And Out"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -198,7 +207,12 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="74" green="a9" red="4e" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\statistic.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Statistic"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnStatisticActionPerformed"/>
@@ -208,6 +222,9 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="c4" green="86" red="4e" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\account.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Accounts"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -222,6 +239,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="99" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\Parkinggarage.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Parking Visualization"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
@@ -235,7 +255,12 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="33" red="33" type="rgb"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\dqkhanh\Documents\GitHub\ParkingSystem-2.0\ParkingSystem 2.0\src\main\java\Admin\152533.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Log Out"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogOutActionPerformed"/>
