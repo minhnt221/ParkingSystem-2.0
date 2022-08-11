@@ -95,18 +95,7 @@ class ParkingTest {
         assertEquals(1, p.getListCurrentVehicle().size());
     }
 
-    @Test
-    void removeVehicleByID() {
-        Parking p = new Parking();
-        Vehicle v = new Vehicle();
-        v.setLicPlate("29" + StringAlpha(1) + StringNumer(5));
-        p.assignVehicleToSlot(v);
-        p.loadUsedSlot();
 
-        p.removeVehicleByID(1);
-
-        assertEquals(0, p.getListCurrentVehicle().size());
-    }
 
     @Test
     void assignVehicleToSlot() {

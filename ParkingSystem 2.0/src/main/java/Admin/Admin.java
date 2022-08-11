@@ -248,7 +248,7 @@ public class Admin extends javax.swing.JFrame {
     private void btnCarInOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCarInOutActionPerformed
 
         CarInAndOut process = new CarInAndOut(p, inQ, outQ);
-        process.setAdmin(isAdmin);
+        process.setAdmin(true);
         process.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnCarInOutActionPerformed
@@ -263,7 +263,7 @@ public class Admin extends javax.swing.JFrame {
         
         
         Garage proccess = new Garage();
-        proccess.setIsAdmin(isAdmin);
+        proccess.setIsAdmin(true);
         proccess.setVisible(true);
         this.setVisible(false);        // TODO add your handling code here:
     }//GEN-LAST:event_btnParkingVisualizationActionPerformed

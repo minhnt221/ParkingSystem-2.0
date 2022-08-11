@@ -159,7 +159,7 @@ public class Account extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnNewAccActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewAccActionPerformed
-       CreateNewAcc().setVisible(true);
+       new CreateNewAcc().setVisible(true);
        this.setVisible(false);// TODO add your handling code here:
     }//GEN-LAST:event_btnNewAccActionPerformed
 
