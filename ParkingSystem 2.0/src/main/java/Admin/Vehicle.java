@@ -39,14 +39,14 @@ public class Vehicle implements Serializable {
     }
     
     public static String StringAlpha(int n) {
-	String AlphaString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	StringBuilder s = new StringBuilder(n);
-	int y;
-	for ( y = 0; y < n; y++) {
-            int index = (int)(AlphaString.length() * Math.random());
-            s.append(AlphaString.charAt(index));
-	}
-	return s.toString();
+	    String AlphaString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	    StringBuilder s = new StringBuilder(n);
+	    int y;
+	    for ( y = 0; y < n; y++) {
+                int index = (int)(AlphaString.length() * Math.random());
+                s.append(AlphaString.charAt(index));
+	    }
+	    return s.toString();
     }
     
     public static String StringNumer(int n) {
