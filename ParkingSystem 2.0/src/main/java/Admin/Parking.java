@@ -17,14 +17,18 @@ public class Parking {
     private int used_slot = 0;
     private int capacity = max_row*max_column;
     public ArrayList<Vehicle> currentVehicleInParkingLot = new ArrayList();
-    
-    public Parking(){
-        //tao slot khi parking duoc tao
+
+    public void setupSlot(int max_row, int max_column) {
         for (int i = 0; i< max_row; i++){
             for (int j = 0; j< max_column; j++){
-		slots[i][j] = new Slots(i*10+(j+1));
+                slots[i][j] = new Slots(i*10+(j+1));
             }
-	}
+        }
+    }
+    public Parking(){
+        setupSlot(max_row, max_column);
+        //tao slot khi parking duoc tao
+
     }
     public void loadUsedSlot(){
         currentVehicleInParkingLot.clear();
